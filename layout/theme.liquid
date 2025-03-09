@@ -249,6 +249,19 @@
           font-size: 1.6rem;
         }
       }
+
+      @font-face {
+        font-family: 'Syne-Bold';
+        src: url('{{ 'https://cdn.shopify.com/s/files/1/0866/3846/1221/files/Syne-Bold.woff2?v=1741542704' | asset_url }}') format('woff2');
+        font-weight: bold;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Syne-Medium';
+        src: url('{{ 'https://cdn.shopify.com/s/files/1/0866/3846/1221/files/Syne-Medium.woff2?v=1741542704' | asset_url }}') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
