@@ -250,7 +250,7 @@
           font-size: 1.6rem;
         }
       }
-
+{% comment %}
       @font-face {
         font-family: 'Syne-Bold';
         src: url('{{ 'https://cdn.shopify.com/s/files/1/0866/3846/1221/files/Syne-Bold.woff2?v=1741542704' | asset_url }}') format('woff2');
@@ -263,7 +263,9 @@
         font-weight: normal;
         font-style: normal;
       }
+      {% endcomment %}
     {% endstyle %}
+      
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
